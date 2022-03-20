@@ -1,0 +1,39 @@
+* SPICE3 file created from vtc.ext - technology: sky130A
+
+.subckt vtc Out2 a1 a2 a3 a4 a5 Out1 tpsc_out t1 t3 b1 b2 b3 t2 io_analog[0] io_analog[1]
++ vssa1 vccd1 io_analog[3]
+X0 a3 io_analog[2] a5 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=180000u
+X1 a3 io_analog[1] vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X2 vssa1 Out2 a2 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=180000u
+X3 t1 io_analog[1] t3 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X4 t1 Out1 vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X5 b1 tpsc_out vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=8e+06u l=180000u
+X6 b1 tpsc_out vssa1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X7 b3 b2 vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=8e+06u l=180000u
+X8 a1 Out1 vssa1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=180000u
+X9 b3 b2 vssa1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X10 a5 io_analog[3] a4 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=180000u
+X11 vccd1 io_analog[1] a4 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X12 Out1 a1 vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X13 vssa1 a4 a1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X14 b2 b1 vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=8e+06u l=180000u
+X15 b2 b1 vssa1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X16 tpsc_out io_analog[1] t2 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X17 tpsc_out t1 vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X18 io_analog[0] b3 vccd1 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=8e+06u l=180000u
+X19 io_analog[0] b3 vssa1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X20 vssa1 io_analog[1] a5 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X21 vssa1 Out1 t3 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X22 vccd1 a2 Out2 vccd1 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X23 a2 a3 vssa1 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+X24 Out1 io_analog[1] a2 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=180000u
+X25 a1 io_analog[1] Out2 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=180000u
+X26 vssa1 t1 t2 vssa1 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=180000u
+C0 a4 vssa1 2.32fF
+C1 a3 vssa1 2.31fF
+C2 io_analog[0] vssa1 32.87fF
+C3 io_analog[1] vssa1 45.93fF
+C4 Out1 vssa1 3.54fF
+C5 vccd1 vssa1 75.26fF
+C6 io_analog[2] vssa1 45.67fF
+.ends
